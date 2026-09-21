@@ -23,37 +23,6 @@
 
 ##  2. Реализация программы 
 
-#define _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
-#include <locale.h>
-#include <math.h>
-int main()
-{
-	setlocale(LC_ALL, "RUS");
-	float H;
-	float Vc;
-	float Vp;
-	float S;
-	float t;
-	S = H * Vc / sqrt(Vp * Vp - Vc * Vc);
-	printf("Введите высоту полёта H (м): ");
-	scanf("%f", &H);
-	printf("Введите скорость самолёта Vc (м/с): ");
-	scanf("%f", &Vc);
-	printf("Введите скорость ракеты Vp (м/с): ");
-	scanf("%f", &Vp);
-	if (Vp <= Vc)
-	{
-		printf("Ракета не сможет догнать самолёт\n");
-		return 0;
-	}
-	t = H / sqrt(Vp * Vp - Vc * Vc);
-	S = Vp * t;
-	printf("\n Время до встречи: %.2f с\n", t);
-	printf("Дальность поражения цели: %.2f м\n", S);
-	return 0;
-}
-
 ## 3. Результаты работы программы
 ### Расчёт дальности поражения цели от пусковой установки
 
