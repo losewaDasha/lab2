@@ -22,6 +22,7 @@
 ### Блок-схема
 
 ##  2. Реализация программы 
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
